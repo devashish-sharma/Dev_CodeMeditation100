@@ -1,0 +1,51 @@
+body::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+}
+
+a:hover {
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.active {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.img-fluid:hover {
+    background-color: bisque;
+}
+
+.col-sm:hover {
+    background-color: aquamarine;
+    border-radius: 4px;
+}
+
+.c-animate-hide {
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transform: translateY(100%)
+}
+
+.c-animate-show {
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transform: translateY(0)
+}
