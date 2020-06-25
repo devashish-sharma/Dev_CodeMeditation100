@@ -1,0 +1,1 @@
+<img src="https://github.com/devashish-sharma/Dev_CodeMeditation100/blob/master/React%20Simple%20Web%20Page/output/result.gif"/>
