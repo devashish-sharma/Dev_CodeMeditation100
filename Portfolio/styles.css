@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 20px;
+}
+
+#nav::-webkit-scrollbar {
+    width: 10px;
+}
+
+#nav::-webkit-scrollbar-track {
+    background: white;
+}
+
+#nav::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(red, yellow, green);
+    border-radius: 20px;
+}
+
+#main-doc {
+    color: #212529;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.navbar h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 350;
+}
+
+/* Styling the footer area */
+
+footer {
+    padding: 1rem 0.75rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #444;
+}
+
+/* Styling the link located in the footer */
+
+footer a {
+    color: #563d7c;
+    text-decoration: none;
+}
+
+/* Making the link from the footer underlined when :hover */
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styling <code> elements across the page */
+
+p>code, li>code {
+    color: crimson;
+    font-family: Consolas, "courier new";
+    background-color: #f7f7f9;
+}
+
+/* Styling the containers with code snippets */
+
+.code-container {
+    overflow-x: scroll;
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    color: #563d7c;
+    font-family: Consolas, "courier new";
+    font-size: 0.9rem;
+    line-height: 1.25;
+    background-color: #f7f7f9;
+    border-left: 0.25rem solid #563d7c;
+    border-radius: 0.25rem;
+}
+
+/* Styling <div>s containing information with a "warning" class */
+
+.warning {
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    border: 1px solid #eee;
+    border-left-color: #f0ad4e;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+/* Styling <h4> located in a <div> with a "warning" class */
+
+.warning>h4 {
+    color: #f0ad4e;
+}
+
+/* Styling <div>s containing information with a "danger" class */
+
+.danger {
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    border: 1px solid #eee;
+    border-left-color: #d9534f;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+/* Styling <h4> located in a <div> with a "danger" class */
+
+.danger>h4 {
+    color: #d9534f;
+}
+
+/* Styling the nav are of the page */
+
+#nav {
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    background-color: crimson;
+    overflow-y: scroll;
+}
+
+/* Styling the header from the nav area */
+
+.navbar header {
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+}
+
+.navbar h2 {
+    flex: 1;
+}
+
+/* Removing default styles for of an <ol> */
+
+.navbar>ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adding padding to <li> from <ol> located in the nav area */
+
+ol>li {
+    padding: 0.25rem 1rem;
+}
+
+/* Styling the links from the nav area */
+
+.navbar .nav-link {
+    text-decoration: none;
+    /* Removing default style for links */
+    color: #fff;
+    pointer: cursor;
+}
+
+/* Adding style to a link from the nav area on :hover */
+
+.navbar .nav-link:hover {
+    color: #ffe484;
+}
+
+/* Removing default styles for of an <ul> and adding custom padding */
+
+.nav-item ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+/* Hiding the link that should open and close the navbar on small screens */
+
+.navbar .icon {
+    display: none;
+}
+
+/* Styling the area of the content of the page */
+
+#content-wrapper {
+    top: 0;
+    right: 0;
+    margin: 0 0 0 auto;
+    width: 70%;
+}
+
+/* Setting the width and margin of the content-itself of the page */
+
+#content {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* Removing all margins and paddings for <pre> elements */
+
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* When the screen is less than 600 pixels wide: */
+
+@media screen and (max-width: 600px) {
+    body::-webkit-scrollbar {
+        width: 10px;
+        /* width of the entire scrollbar */
+    }
+    body::-webkit-scrollbar-track {
+        background: white;
+        /* color of the tracking area */
+    }
+    body::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        /* color of the scroll thumb */
+        border-radius: 20px;
+    }
+    /* Setting the width of the nav area to 100% */
+    #nav {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    /* Setting the width of the content area to 100% */
+    #content-wrapper {
+        margin: 0;
+        width: 100%;
+    }
+    /* Adding margin to the navbar area */
+    .navbar ol {
+        margin-bottom: 0.75rem;
+    }
+    /* Hiding all links from the navbar */
+    .navbar ol, .navbar .sec-nav-item/* Hiding second level navigation for a smaller nav area */
+        {
+        display: none;
+    }
+    .navbar.responsive ol {
+        display: block;
+    }
+    /* Showing the link that should open and close the topnav (.icon) */
+    .navbar a.icon {
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+
+/* When the screen is greater than 1600 pixels wide: */
+
+@media screen and (min-width: 1600px) {
+    body::-webkit-scrollbar {
+        width: 10px;
+        /* width of the entire scrollbar */
+    }
+    body::-webkit-scrollbar-track {
+        background: white;
+        /* color of the tracking area */
+    }
+    body::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        /* color of the scroll thumb */
+        border-radius: 20px;
+    }
+    /* Decreasing the size of nav area of the page from 30% to 20% */
+    #nav {
+        width: 20%;
+    }
+    /* Increasing the size of the area of the content of the page from 70% to 80% */
+    #content-wrapper {
+        width: 80%;
+    }
+    /* Adjusting the width and margin of the content-itself of the page */
+    #content {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .navbar>ol {
+        font-size: 1.1rem;
+    }
+}
